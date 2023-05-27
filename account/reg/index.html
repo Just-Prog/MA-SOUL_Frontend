@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账号注册 - 码魂 MA-SOUL(Demo)</title>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/login-reg.css"/>
+    <script type="text/javascript" src="/js/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <nav id="top">
+            <div id="topnav_menu">
+                <img src="/img/menu.png" width="100%" height="100%" alt="Menu"/>
+            </div>
+            <div id="topnav_logo">
+                <img src="/img/logo_nav.png" alt="Nav Logo" height="100%"/>
+            </div>
+            <div id="topnav_modules">
+                <div class="topnav_link_l">
+                    <a href="/" target="_self"><span class="topnav_items">首页</span></a>
+                </div>
+                <div class="topnav_link_l">
+                    <a href="/course" target="_self"><span class="topnav_items">课程</span></a>
+                </div>
+                <div class="topnav_link_l">
+                    <a href="#" target="_self"><span class="topnav_items">题库</span></a>
+                </div>
+                <div class="topnav_link_l">
+                    <a href="#" target="_self"><span class="topnav_items">比赛</span></a>
+                </div>
+                <div class="topnav_link_l">
+                    <a href="#" target="_self"><span class="topnav_items">讨论</span></a>
+                </div>
+                <div class="topnav_link_r">
+                    <a href="/account/reg" target="_self"><span class="topnav_items_account">注册</s></a>
+                </div>
+                <div class="topnav_link_r">
+                    <a href="/account/login" target="_self"><span class="topnav_items_account">登录</span></a>
+                </div>
+            </div>
+        </nav>
+        <nav id="mobile_menu">
+            <div id="mobilenav_modules">
+                <div class="mobilenav_link">
+                    <a href="/" target="_self"><span>首页</span></a>
+                </div>
+                <div class="mobilenav_link">
+                    <a href="/course" target="_self"><span>课程</span></a>
+                </div>
+                <div class="mobilenav_link">
+                    <a href="#" target="_self"><span>题库</span></a>
+                </div>
+                <div class="mobilenav_link">
+                    <a href="#" target="_self"><span>比赛</span></a>
+                </div>
+                <div class="mobilenav_link">
+                    <a href="#" target="_self"><span>讨论</span></a>
+                </div>
+            </div>
+            <div id="mobilenav_acc">
+                <a href="/account/login" target="_self" class="mobilenav_acc_btn"><span>登录</span></a> | 
+                <a href="/account/reg" target="_self" class="mobilenav_acc_btn"><span>注册</span></a>
+            </div>
+        </nav>
+        <div id="mobile_menu_graybg" class="gray-40p"></div>
+        
+        <div id="full_screen">
+            <!--登录/注册界面-中央大卡片-->
+            <section id="account_main">
+                <div id="account_sideimg"></div>
+                <div id="account_main_r">
+                    <h3 id="account_title">注册您的 码魂MA-SOUL 账号</h3>
+                    <form action="/account/login/index.html" method="get" class="account-form">
+                        <div id="account_inputbox">
+                            <input type="text" name="uid" id="uid" placeholder="用户名/UserID" required>
+                        </div>
+                        <div id="account_inputbox">
+                            <input type="email" name="email" id="email" placeholder="电子邮件地址" required>
+                        </div>
+                        <div id="account_inputbox">
+                            <input type="tel" name="phonenum" id="phonenum" maxlength="11" pattern="[1]{1}[3,5,7,8]{1}[0-9]{9}" oninput = "value=value.replace(/[^\d]/g,'')" placeholder="电话号码(中国大陆,暂不支持中国广电192)" required>
+                        </div>
+                        <div id="account_inputbox">
+                            <input type="password" name="pwd" id="pwd" maxlength="12" minlength="8" placeholder="密码(8-12位)" required>
+                        </div>
+                        <div id="account_inputbox">
+                            <input type="submit" id="apply" value="注册">
+                        </div>
+                    </form>
+                    <span id="account_tips">已有账号？<a href="/account/login">点此登录。</a></span>
+                </div>
+            </section>
+        </div>
+
+        <footer id="footer">
+            <div id="footer_logo">
+                <img src="/img/logo.png" alt="footer logo"/>
+            </div>
+            <div id="footer_slogan">
+                为信息学教育添翼，<br>
+                为计科未来镀金。
+            </div>
+            <div id="footer_extra">
+                <p>
+                    <a href="/about/">关于我们</a> | 
+                    <a href="#">用户政策</a> | 
+                    <a href="#">联系我们</a> | 
+                    <a href="#">社区规则</a><br/><br/>
+                    Developed By 码魂 MA-SOUL Dev & YOU.<br/>
+                    2023-2023, 码魂 MA-SOUL, All rights reserved.<br/>
+                    UI inspired by <a href="https://hydro.ac/" style="color: #5f9fd6;">Hydro OpenJudge</a> and <a href="" style="color: rgb(91,155,213)">Luogu</a>.
+                </p>
+            </div>
+        </footer>
+    </div>
+    
+    <style>
+        #account_sideimg{
+            background-image: url(/img/account-sideimg-2.png);
+        }
+    </style>
+    <script type="text/javascript" zIndex="-999" src="/js/canvas-nest.js"></script>
+    <script>
+        $("canvas").attr("id","dynamic_bg");
+    </script>
+    <script type="text/javascript" src="/js/mobilenav_trigger.js"></script>
+</body>
+</html>

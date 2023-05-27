@@ -1,0 +1,85 @@
+#full_screen{
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+#account_main{
+    display: flex;
+    border: none;
+    border-radius: 7.5px;
+    width: 800px;
+    height: 80%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#account_sideimg{
+    width: 75%;
+    background-size: cover;
+    background-position: center;
+}
+
+#account_main_r{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    flex-direction: column;
+}
+
+.account-form{
+    width: 80%;
+}
+
+#account_main_r div{
+    margin: 2rem auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#account_main_r form div input{
+    height: 2rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid pink;
+}
+
+#apply{
+    width: 100%;
+    border:none;
+    border-radius: 5px;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    text-align: center;
+    font-size: 1rem;
+}
+
+#account_title{
+    text-align: center;
+    font-size: x-large;
+}
+
+span#account_tips{
+    font-size: small;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+    #account_title{
+        font-size:larger;
+    }
+    #account_sideimg{
+        display: none;
+    }
+}
+
+@media screen and (max-width: calc(800px + 2rem)) {
+    #account_main{
+        margin: 2rem 1rem;
+        max-width: none;
+    }
+
+    #account_main_r div{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

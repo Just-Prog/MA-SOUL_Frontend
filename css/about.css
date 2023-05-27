@@ -1,0 +1,137 @@
+#index_desc{
+    /* height: 1200px; */
+    width: 100%;
+}
+
+#index_desc #bg{
+    /* height: 100%; */
+    width: 100%;
+    background-image: url(/img/about-bg1.jpg);
+    background-size:cover;
+    background-position: top center;
+    height: 75vh;
+}
+
+#index_descs{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    color:white;
+    /* padding-left: 15%; */
+    /* padding-bottom: 25%; */
+    /* overflow-x: hidden; */
+}
+
+#index_descs span{
+    opacity: 0%;
+}
+
+#index_descs div#index_reg{
+    opacity: 0%;
+}
+
+#index_descs_1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    padding-top: 30vh;
+}
+
+#index_descs_2{
+    font-size: 1rem;
+    font-weight: lighter;
+    padding-top: 1.2rem;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+#index_reg{
+    background: rgb(216, 216, 29);
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
+    color: black;
+}
+
+#index_reg a{
+    text-decoration: none;
+    color: black;
+}
+
+.index_s{
+    display: flex;
+    /* border-bottom: 1px solid black; */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.index_s_l, .index_s_r{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.index_s_l{
+    flex-flow: column;
+    font-size: 1.5rem;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+
+.index_s_l .cmt{
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding:0;
+}
+
+.index_s_l .bigtitle{
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.index_s_r{
+    font-size: 1.25rem;
+    background-color: rgb(240,240,240);
+}
+
+@media screen and (max-width: 740px) {
+    #index_desc #bg{
+        background-position: top right;
+        height: 100vh;
+    }
+
+    #index_descs_1{
+        padding-top: 35vh;
+    }
+
+    .index_descs_1{
+        font-size:2rem;
+    }
+    
+    .index_descs_2{
+        font-size: 0.8rem;
+    }
+    .index_s{
+        flex-flow: column;
+    }
+    .index_s_l{
+        font-size: 2rem;
+    }
+    
+    .index_s_l .eng{
+        font-size: 0.75rem;
+    }
+
+    .index_s_r{
+        margin: 1rem 10%;
+    }
+}

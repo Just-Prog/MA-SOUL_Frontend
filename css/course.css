@@ -1,0 +1,54 @@
+#courses-l{
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+.courses-s a{
+    text-decoration: none;
+    font-size:small;
+}
+
+.courses-s{
+    display: flex;
+    float: left;
+    width: calc(33.33% - 0.5rem); /* 默认一行3个 */
+    margin: 0.25rem 0.25rem;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.courses-s-2{
+    width: calc(50% - 0.5rem);
+}
+
+.courses-s-4{
+    width: calc(25% - 0.5rem);
+}
+
+.courses-s-5{
+    width: calc(20% - 0.5rem);
+}
+
+.courses-s img{
+    width: 100%;
+}
+
+.courses-s span{
+    font-size: small;
+    margin: 0.5rem 0;
+    width: 85%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 740px){
+    .courses-s{
+        width: calc(50% - 0.5rem); /* 缩小后默认一行2个 */
+    }
+}

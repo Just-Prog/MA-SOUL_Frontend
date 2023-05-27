@@ -1,0 +1,67 @@
+#hp_banner{
+    display: flex;
+    width: 100%;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+#hp_banner>#banner_main{
+    display: flex;
+    height: 2.5rem;
+    width: 100%;
+    max-width: 950px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(30deg,#e66465, #9198e5);
+    background-position: center;
+}
+
+#discussion_nodes, #links{
+    width: 100%;
+    /* text-align: center; */
+    list-style: none;
+    padding:0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: normal;
+    white-space: normal;
+}
+
+#discussion_nodes li, #links li{
+    display:inline-block;
+}
+
+#hp_problems{
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    list-style: none;
+}
+
+#hp_courses{
+    width: 100%;
+    height: auto;
+}
+
+#hp_discussion #discussion_nodes .nodes_s a, #hp_problem #hp_problems .hp_problems-s a, #hp_friend_link #links .link a{
+    text-decoration: none;
+    font-size:small;
+}
+
+.hp_problems-s{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 740px){
+    #hp{
+        margin: 2vh 2.5vh;
+    }
+
+    #hp_banner{
+        max-width: none;
+    }
+}

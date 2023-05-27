@@ -1,0 +1,31 @@
+/* @font-face{
+    font-family: 'NotoSansCJKsc';
+    src: url(/fonts/NotoSansCJKsc-Black.otf);
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: 'NotoSansCJKsc';
+    src: url(/fonts/NotoSansCJKsc-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'NotoSansCJKsc';
+    src: url(/fonts/NotoSansCJKsc-DemiLight.otf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'NotoSansCJKsc';
+    src: url(/fonts/NotoSansCJKsc-Light.otf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: 'NotoSansCJKsc';
+    src: url(/fonts/NotoSansCJKsc-Regular.otf);
+    font-weight: normal;
+} */
+
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+SC);

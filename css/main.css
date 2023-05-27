@@ -1,0 +1,383 @@
+@import url(/css/notosc.css);
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240,240,240);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+div#main{
+    /* background-color: #fff; */
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    /* font-family: 'NotoSansCJKsc'; */
+    font-family: 'Noto Sans SC';
+}
+
+#top{
+    /*border: 1px solid red;*/
+    height: 2.5rem;
+    position:sticky;
+    top: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid black;
+    
+    background-color: #fff;
+    opacity: 100%;
+    z-index: 999;
+}
+
+#top a{
+    text-decoration: none;
+    color: #000;
+}
+
+#topnav_menu{
+    float: left;
+    height: 60%;
+    margin: 0.5rem 0 0.5rem 0;
+    display: none;
+}
+
+#topnav_logo{
+    float: left;
+    height: calc(100% - 1px);
+    width: 80px;
+    padding-left: 0.5rem;
+}
+
+#topnav_modules{
+    height: 100%;
+}
+
+.topnav_link_l, .topnav_link_r{
+    width: 5rem;
+    height: 100%;
+    text-align: center;
+}
+
+.topnav_items, .topnav_items_account{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.topnav_link_l{
+    float: left;
+}
+
+.topnav_link_r{
+    float: right;
+}
+
+.topnav_link_l:hover{
+    background: #a09d9dcc;
+}
+
+.topnav_items_account{
+    border: 2px #a09d9dcc solid;
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
+}
+
+.topnav_items_account:hover{
+    background-color: #a09d9dcc;
+    color: #fff;
+}
+
+.topnav_link_now{
+    box-sizing: border-box;
+    border-bottom: 2px solid red;
+}
+
+#mobile_menu{
+    display: none;
+    z-index: 99;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    font-size: large;
+    background-color: #fff;
+}
+
+#mobile_menu a{
+    text-decoration: none;
+    color: #000;
+}
+
+#mobile_menu_graybg{
+    display: none;
+    z-index: 98;
+    /* width: 100%;
+    height: 100%;
+    background: rgb(128,128,128,0.6); */
+}
+
+.mobilenav_link{
+    padding: 1rem 1rem;
+}
+
+.mobilenav_link:hover{
+    background-color: #6c757d;
+}
+
+.mobilenav_link_now{
+    box-sizing: border-box;
+    border-right: 0.3rem solid red;
+}
+
+#mobilenav_acc{
+    display: flex;
+    padding: 1rem 1rem;
+}
+
+.mobilenav_acc_btn{
+    flex:1;
+}
+
+#footer{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #000;
+    background-color: rgb(229,0,18,0.8);
+    clear: both;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+#footer_logo{
+    width: 9rem;
+    float: left;
+    padding-left: 2rem
+}
+
+#footer_logo img{
+    width: 100%;
+}
+
+#footer_slogan{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.5;
+    padding-left: 2rem;
+}
+
+#footer_extra{
+    text-align: right;
+    flex: 1;
+    color: #fff;
+    padding-right: 1rem;
+    /* 
+        flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
+        如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。
+        如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+    */
+}
+
+#footer_extra a{
+    color: #fff;
+}
+
+.gray-40p{
+    background-color: rgb(0,0,0,0.4);
+    width: 100%;
+    height: 100%
+}
+
+#main_card{
+    /* display: flex; */
+    width: 100%;
+    max-width: 950px;
+    /* align-items: center;
+    align-content: center; */
+    margin: 0 auto;
+}
+
+.large_l{
+    display: flex;
+    flex-direction: column;
+    width: calc(75% - 0.5rem);
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.large{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.small_r{
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 0.5rem);
+    margin-left: 0.5rem;
+    float: right;
+}
+
+.card{
+    /* width: 100%; */
+    background-color: #fff;
+    margin: 0.75rem 0;
+    padding: 0.75rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.card>.card_title{
+    width: 100%;
+    min-width: 100%;
+    height: 1.5rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.card>.card_title>h3{
+    font-size: 1.5rem;
+    margin: 0;
+    float: left;
+    clear: both;
+}
+
+section#main{
+    display: block;
+    margin: 5vh 3vh;
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+#full_screen{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 2.5rem);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.rolling_img_frame{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.rolling_img_frame .rolling_imgs{
+    width: 400%;
+    position: relative;
+    display: flex;
+    flex: 1;
+    left: 0%;
+    transition: all 0.75s;
+}
+
+.rolling_img_frame .rolling_imgs .rolling_img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    float: left;
+}
+
+.rolling_img_frame .rolling_img img{
+    width: 100%;
+}
+
+/* 对多端适配的尝试，使用@media screen标签判断浏览器宽度*/
+@media screen and (max-width: 740px) {
+    #top{
+        /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/Layout_cookbook/Center_an_element */
+        display: flex;
+        align-items: center;
+    }
+    #topnav_menu{
+        display: block;
+    }
+    #topnav_modules{
+        display: none;
+    }
+    #topnav_logo{
+        margin: 0 auto;
+        align-content: center;
+    }
+    #topnav_logo img{
+        margin: 0 auto;
+    }
+
+    #mobile_menu{ /* flex */
+        position: fixed;
+        flex-direction: column;
+    }
+
+    #mobile_menu_graybg{ /* block */
+        position: fixed;
+    }
+
+    #footer>#footer_logo, #footer>#footer_slogan{
+        display: none;
+    }
+
+    #footer_logo, #footer_slogan{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        color: red;
+        font-size: smaller;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #footer_extra{
+        text-align: center;
+    }
+    
+    #dynamic_bg{
+        visibility: hidden;
+    }
+    .large_l, .small_r{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #main_card{
+        flex-flow: column;
+    }
+
+    .card{
+        margin: 0.75rem 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: calc(100% - 2rem);
+    }
+
+    .rolling_img_frame .rolling_img{
+        height: 200px;
+    }
+    
+    .rolling_img_frame .rolling_img img{
+        height: 100%;
+        width: auto;
+    }
+}
